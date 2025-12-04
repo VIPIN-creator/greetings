@@ -6,6 +6,25 @@ import (
     "math/rand"
 )
 
+func Hellos(names []string) (map[string]string, err) {
+    messages := make(map[string]string)
+
+    //In this for loop, range returns two values: the index of the current item in the loop and a copy of the item's value. 
+    // You don't need the index, so you use the Go blank identifier (an underscore) to ignore it. 
+    for -, name := range names {
+       
+        message, err := Hello(name)
+
+        if err != nil {
+            return nil, err
+        }
+
+        messages[name] = message
+    }
+
+    return messages, nil
+}
+
 // Hello returns a greeting for the named person.
 func Hello(name string) (string, error) {
 

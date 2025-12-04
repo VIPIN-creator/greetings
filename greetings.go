@@ -6,7 +6,7 @@ import (
     "math/rand"
 )
 
-func Hellos(names []string) (map[string]string) {
+func Hellos(names []string) (map[string]string, error) {
     messages := make(map[string]string)
 
     //In this for loop, range returns two values: the index of the current item in the loop and a copy of the item's value. 

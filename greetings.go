@@ -11,7 +11,7 @@ func Hellos(names []string) (map[string]string, err) {
 
     //In this for loop, range returns two values: the index of the current item in the loop and a copy of the item's value. 
     // You don't need the index, so you use the Go blank identifier (an underscore) to ignore it. 
-    for -, name := range names {
+    for _, name := range names {
        
         message, err := Hello(name)
 
